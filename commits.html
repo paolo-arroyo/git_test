@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Commit Messages</title>
+    </head>
+    <h1>
+        When to Commit
+    </h1>
+    <h2>Key Points</h2>
+    <ul>
+        <li>Commits are like <em>snapshots</em> of your code.</li>
+        <li><strong>Best Practice: </strong>Commit every time you make a meaningful change in the code, thus creating a timeline of your progress and showing that your code didn't just appear out of nowhere.</li>
+        <li>Meaningful changes include things like:
+            <ul>
+                <li>Getting a piece of code to function the way you want it to.</li>
+                <li>Fixing a typo.</li>
+                <li>Fixing a bug.</li>
+            </ul>
+            When you get more experience as a developer, you'll get a better feel of what should be committed.
+        </li>
+        <li>When you <strong> FINALLY </strong> get something right, for example, would be a good time to commit. This way, if something breaks after a few minutes or after a few days, you can always <em>revert</em> back to an earlier commit (i.e. snapshot of your code) when everything was still working fine so you can see what your code <em>looked like</em> at that point in time.</li>
+    </ul>
+    <h1>The Seven Rules of a Great Commit Message</h1>
+    <p>Well-crafted Git commit messages are the best way to communicate context about a change to fellow developers (and to your future self). A diff can tell <em>what</em> changed, but only the commit message can properly tell you <em>why</em>.</p>
+    <p><strong>Commit messages can show whether or not a developer is a good collaborator.</strong></p>
+    <ol>
+        <li><strong>Separate subject from body with a blank line (for multi-line commit messages).
+        </strong>
+            <p>Big/complicated changes will call for multi-line commit message. Use git commit to open a text editor where you can put in a multi-line commit message. The first line (subject line) will be treated as the commit message most easily visible/accessible, and collaborators will be able to view the details in the body (separated from subject with a blank line) with commands like <strong>git show</strong> or <strong>git diff</strong> or <strong>git log -p</strong>.
+            </p>
+        </li>
+        <li><strong>Limit the subject line to 50 characters.</strong></li>
+        <li><strong>Capitalize the first letter of the subejct line</strong></li>
+        <li><strong>Do not end subject lines with periods.</strong></li>
+        <li><strong>Use the <u>Imperative</u> mood in the subject line.</strong>
+        <p><em>Imperative mood</em> just means 'spoken or written as if giving a command or instruction. For example: <ul>
+            <li>Clean your room</li>
+            <li>Add this feature</li>
+            <li>Fix that bug</li>
+        </ul></p>
+        <p>This is going to be tricky at first, since we're used to the <em>indicative mood</em> which is all about reporting facts. For example: <ul>
+            <li><del>>Fixed bug with U</del></li>
+            <li><del>Changing behavior of X</del></li>
+        </ul></p>
+        <p><strong>As a general rule of thumb, use your commit message to complete the following sentence:
+            <ul>
+                <li>If applied, this commit will <u>your subject line here</u>.</li>
+            </ul>
+        </strong></p></li>
+        <li><strong>Wrap body at 72 characters</strong></li>
+        <li><strong>Use the body to explain <em>what</em> and <em>why</em> instead of <em>how</em></strong></li>
+    </ol>
+</html>
